@@ -38,7 +38,7 @@ fun MagicButton() {
     var clickCount by rememberSaveable { mutableStateOf(0)}
         FilledIconButton(onClick = { clickCount++ },modifier = Modifier.padding(start= if (columns == 3) 0.dp else 20.dp).height(50.dp).width(if (columns == 3) 180.dp else 240.dp)) {
             Text(
-                "Add box"
+                "Do magic"
             )
         }
     Box(
