@@ -26,13 +26,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AddNumberBoxButtonPreview()
+            MagicButton()
         }
     }
 }
 
 @Composable
-fun AddNumberBoxButtonPreview() {
+fun MagicButton() {
     val columns =
         if (LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE) 4 else 3
     var clickCount by rememberSaveable { mutableStateOf(0)}
